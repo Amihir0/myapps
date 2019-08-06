@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>ReflexesMeasure</title>
-    <link rel="stylesheet" href="main.css">
-
-</head>
-<body>
-  <a href="https://sleepy-ptolemy-27cf02.netlify.com/">トップに戻る</a>
-  <h1>ReflexesMeasure</h1>
-  <div id="Description">あなたの動体視力を計測してみましょう！<br>Startすると、何秒か後に赤いボタンが表示されます。表示されたらクリック</div>
-    <div id = "Sbtn">Start</div>
-    <div id="Pbtn">Push</div>
-    <script src="main.js"></script>
-  <!-- https://silly-hawking-704109.netlify.com/ -->
-
-</body>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <a href="https://sleepy-ptolemy-27cf02.netlify.com/">トップに戻る</a>
+    <div class="T_description">
+      <h1>ReflexesMeasure</h1>
+      <div id="Description">
+        あなたの動体視力を計測してみましょう！<br />Startすると、何秒か後に赤いボタンが表示されます。表示されたらクリック
+      </div>
+      <input type="submit" value="Start" id="Sbtn" />
+      <div id="Pbtn">Push</div>
+      <script src="main.js"></script>
+    </div>
+    <!-- https://silly-hawking-704109.netlify.com/ -->
+  </body>
 </html>
+
+<!-- やりたいこと -->
+<!-- ・Startを押すまでは、赤いボタンを表示しない
+・Startが押されたら、カウントダウンが始まる（3秒）
+・この間に、Math.randomで5の数字から乱数を決める
+・カウントダウンが終了したら、そこからMath.random内の数字分画面を切り替えない
+・乱数をカウントし終えたらボタンを表示する
+・ボタンがクリックされたら、ボタンを消す。
+・ボタンが表示されてから何秒でクリックされたかを表示する。
+　→Startが押された時間をとボタンがクリックされた時間を、Date,nowで取得
+　→ボタンがクリックされた時間ー乱数の数ー3秒ーStartが押された時間を計算 -->

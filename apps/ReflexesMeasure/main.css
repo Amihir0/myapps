@@ -1,21 +1,24 @@
-
 body {
-    background: black;
-    color: white;
-  }
+  background: black;
+  color: white;
+}
 
 #Pbtn {
-    width: 200px;
-    height: 200px;
-    background: #ef454a;
-    border-radius: 50%;
-    margin: 30px auto 0;
-    text-align: center;
-    line-height: 200px;
-    color: #fff;
-    font-size: 42px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 10px 0 #d1483e;
-    user-select: none;
-  }
+  width: 200px;
+  height: 200px;
+  background: #ef454a;
+  border-radius: 50%;
+  margin: 30px auto 0;
+  text-align: center;
+  line-height: 200px;
+  color: #fff;
+  font-size: 42px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 10px 0 #d1483e;
+  user-select: none;
+}
+
+.T_description {
+  margin: 20px auto;
+}
